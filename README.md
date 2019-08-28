@@ -8,7 +8,12 @@ During my research period, I have been switching my research topic very frequent
 
 **Paper recommendation:** Best way to learn new field is reading a good review article written by leading scientist in the field. Problem of finding the article by citation number is this will be highly biased towards the date of publication. First article published in the field gets most citation. This recommender provides list of review articles of most active researchers, based on publication number and citation recently, and displays most recently reviews by analyzing PubMed database. 
 
-#### Key words provided by author
+#### Key Word
+```Python
+search_word='bioactive'
+```
+
+#### Key Words provided by Author
 
 ```Python
 key_paper_lst=key_from_papers(papers)
@@ -91,3 +96,21 @@ key_abstract[:20]
     electron microscopy      2.532576
     scanning electron        2.527362
     dtype: float64
+
+#### Review Paper Recommendation (Google Scholar Links)
+```Python
+result=Author_list(papers)
+result['Google Scholar Links']
+```
+
+    0    https://scholar.google.co.kr/scholar?hl=ko&as_sdt=0%2C5&q=Aldo+R+Boccaccini+review&oq=
+    1      https://scholar.google.co.kr/scholar?hl=ko&as_sdt=0%2C5&q=Francesco+Baino+review&oq=
+    2    https://scholar.google.co.kr/scholar?hl=ko&as_sdt=0%2C5&q=Mohamed+N+Rahaman+review&oq=
+    3          https://scholar.google.co.kr/scholar?hl=ko&as_sdt=0%2C5&q=Jiang+Chang+review&oq=
+    4       https://scholar.google.co.kr/scholar?hl=ko&as_sdt=0%2C5&q=Julian+R+Jones+review&oq=
+    5         https://scholar.google.co.kr/scholar?hl=ko&as_sdt=0%2C5&q=Wenhai+Huang+review&oq=
+    6          https://scholar.google.co.kr/scholar?hl=ko&as_sdt=0%2C5&q=Chengtie+Wu+review&oq=
+    7             https://scholar.google.co.kr/scholar?hl=ko&as_sdt=0%2C5&q=Hui+Wang+review&oq=
+    8               https://scholar.google.co.kr/scholar?hl=ko&as_sdt=0%2C5&q=Bo+Lei+review&oq=
+    9       https://scholar.google.co.kr/scholar?hl=ko&as_sdt=0%2C5&q=Saeid+Kargozar+review&oq=
+    Name: Google Scholar, dtype: object
