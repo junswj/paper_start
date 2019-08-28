@@ -10,13 +10,13 @@ During my research period, I have been switching my research topic very frequent
 
 #### Key Word
 ```Python
-search_word='bioactive'
+search_word = 'bioactive'
 ```
 
 #### Key Words provided by Author
 
 ```Python
-key_paper_lst=key_from_papers(papers)
+key_paper_lst = key_from_papers(papers)
 key_paper_lst.value_counts().head(20)
 ```
     bioactive glass            141
@@ -44,7 +44,7 @@ key_paper_lst.value_counts().head(20)
 #### Key Words from Title
 
 ```Python
-key_title=title_key(papers)
+key_title = title_key(papers)
 key_title[:20]
 ```
     tissue engineering       7.418839
@@ -72,7 +72,7 @@ key_title[:20]
 #### Key Words from Abstract
 
 ```Python
-key_abstract=Abstract_key(papers)
+key_abstract = Abstract_key(papers)
 key_abstract[:20]
 ```
     tissue engineering       4.688455
@@ -99,7 +99,7 @@ key_abstract[:20]
 
 #### Review Paper Recommendation (Google Scholar Links)
 ```Python
-result=Author_list(papers)
+result = Author_list(papers)
 result['Google Scholar Links']
 ```
 
