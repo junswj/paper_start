@@ -1,6 +1,6 @@
 # Research Paper Recommender
 
-### :Review article recommender using PubMed API and Key word exraction from article titles using TF-IDF
+### :Review article recommender using PubMed API and Key word extraction from research article using TF-IDF
 
 During my research period, I have been switching my research topic very frequently, so I know how much the pain involves whenever they had to restart studying on the new field. Thus, I am currently developing the educational platform for junior researchers who just started research, using paper and keyword recommender system.
 
